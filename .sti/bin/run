@@ -10,8 +10,8 @@ run_node() {
     echo "Launching via nodemon..."
     exec nodemon --debug="$DEBUG_PORT"
   else
-    echo "Launching via npm..."
-    exec npm start -d
+    echo "Launching..."
+    exec node main.js
   fi
 } 
 
